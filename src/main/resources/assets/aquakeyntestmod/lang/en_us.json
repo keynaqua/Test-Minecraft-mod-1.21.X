@@ -1,0 +1,10 @@
+{
+  "item.aquakeyntestmod.bismuth": "Bismuth",
+  "item.aquakeyntestmod.raw_bismuth": "Raw Bismuth",
+
+  "block.aquakeyntestmod.bismuth_block": "Bloc of Bismuth",
+  "block.aquakeyntestmod.bismuth_ore": "Bismuth Ore",
+
+  "creativetab.aquakeyntestmod.bismuth_items": "Bismuth Items",
+  "creativetab.aquakeyntestmod.bismuth_blocks": "Bismuth Blocks"
+}
