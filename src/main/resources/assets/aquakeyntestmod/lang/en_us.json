@@ -2,9 +2,15 @@
   "item.aquakeyntestmod.bismuth": "Bismuth",
   "item.aquakeyntestmod.raw_bismuth": "Raw Bismuth",
 
+  "item.aquakeyntestmod.radish": "Red Radish",
+
+  "item.aquakeyntestmod.raw_space_cookie": "Raw Space Cookie",
+  "item.aquakeyntestmod.space_cookie": "Space Cookie",
+
   "block.aquakeyntestmod.bismuth_block": "Bloc of Bismuth",
   "block.aquakeyntestmod.bismuth_ore": "Bismuth Ore",
 
   "creativetab.aquakeyntestmod.bismuth_items": "Bismuth Items",
-  "creativetab.aquakeyntestmod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.aquakeyntestmod.bismuth_blocks": "Bismuth Blocks",
+  "creativetab.aquakeyntestmod.substances": "Substances"
 }

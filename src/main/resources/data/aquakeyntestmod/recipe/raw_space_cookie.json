@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "P": {
+      "item": "minecraft:pufferfish"
+    }
+  },
+  "pattern": [
+    " P ",
+    "WCW",
+    " P "
+  ],
+  "result": {
+    "count": 8,
+    "id": "aquakeyntestmod:raw_space_cookie"
+  }
+}

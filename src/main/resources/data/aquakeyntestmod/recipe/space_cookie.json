@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "space_cookie",
+  "ingredient": {
+    "item": "aquakeyntestmod:raw_space_cookie"
+  },
+  "result": {
+    "count": 1,
+    "id": "aquakeyntestmod:space_cookie"
+  }
+}

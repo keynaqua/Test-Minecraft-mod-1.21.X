@@ -35,6 +35,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_ORE);
                     }).build());
 
+    public static final Supplier<CreativeModeTab> SUBSTANCES_TAB = CREATIVE_MODE_TAB.register("substances_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.SPACE_COOKIE.get()))
+                    .withTabsAfter(ResourceLocation.fromNamespaceAndPath(TestMod.MOD_ID, "bismuth_items_tab"))
+                    .title(Component.translatable("creativetab.aquakeyntestmod.substances"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.RAW_SPACE_COOKIE);
+                        output.accept(ModItems.SPACE_COOKIE);
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }
