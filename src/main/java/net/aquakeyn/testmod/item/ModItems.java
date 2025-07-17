@@ -1,10 +1,10 @@
 package net.aquakeyn.testmod.item;
 
 import net.aquakeyn.testmod.TestMod;
-import net.minecraft.world.food.Foods;
+import net.aquakeyn.testmod.block.ModBlocks;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -26,6 +26,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> SPACE_COOKIE = ITEMS.register("space_cookie",
             () -> new Item(new Item.Properties().food(ModFoodProperties.SPACE_COOKIE)));
+
+    public static final DeferredItem<Item> JUANA_SEEDS = ITEMS.register("juana_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.JUANA_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

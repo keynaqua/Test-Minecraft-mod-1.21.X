@@ -1,11 +1,13 @@
 package net.aquakeyn.testmod.block;
 
 import net.aquakeyn.testmod.TestMod;
+import net.aquakeyn.testmod.block.custom.JuanaCropBlock;
 import net.aquakeyn.testmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -26,6 +28,11 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of()
                             .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+     public static final DeferredBlock<Block> JUANA_CROP = BLOCKS.register("juana_crop",
+             () -> new JuanaCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
