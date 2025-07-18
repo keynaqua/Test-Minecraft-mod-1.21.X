@@ -3,12 +3,15 @@
   "item.aquakeyntestmod.raw_bismuth": "Raw Bismuth",
 
   "item.aquakeyntestmod.radish": "Red Radish",
+  "item.aquakeyntestmod.juana_seeds": "Juana Seeds",
 
   "item.aquakeyntestmod.raw_space_cookie": "Raw Space Cookie",
   "item.aquakeyntestmod.space_cookie": "Space Cookie",
 
   "block.aquakeyntestmod.bismuth_block": "Bloc of Bismuth",
   "block.aquakeyntestmod.bismuth_ore": "Bismuth Ore",
+
+  "block.aquakeyntestmod.juana_crop": "Juana Crop",
 
   "creativetab.aquakeyntestmod.bismuth_items": "Bismuth Items",
   "creativetab.aquakeyntestmod.bismuth_blocks": "Bismuth Blocks",

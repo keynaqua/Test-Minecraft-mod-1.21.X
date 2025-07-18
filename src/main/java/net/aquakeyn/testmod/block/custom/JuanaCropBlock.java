@@ -16,11 +16,16 @@ public class JuanaCropBlock extends CropBlock {
     public static final int MAX_AGE = 7;
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 7);
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {
-            Block.box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 6.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0)
+            Block.box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0),  // age 0
+            Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0),  // age 1
+            Block.box(0.0, 0.0, 0.0, 16.0, 6.0, 16.0),  // age 2
+            Block.box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0),  // age 3
+            Block.box(0.0, 0.0, 0.0, 16.0, 10.0, 16.0), // age 4
+            Block.box(0.0, 0.0, 0.0, 16.0, 12.0, 16.0), // age 5
+            Block.box(0.0, 0.0, 0.0, 16.0, 14.0, 16.0), // age 6
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)  // age 7 (max height)
     };
+
 
     public JuanaCropBlock(Properties properties) {
         super(properties);
@@ -37,7 +42,7 @@ public class JuanaCropBlock extends CropBlock {
     }
 
     @Override
-    protected IntegerProperty getAgeProperty() {
+    public IntegerProperty getAgeProperty() {
         return AGE;
     }
 

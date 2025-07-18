@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "aquakeyntestmod:block/bismuth_block"
-  }
-}
