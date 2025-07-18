@@ -1,6 +1,7 @@
 package net.aquakeyn.testmod;
 
 import net.aquakeyn.testmod.block.ModBlocks;
+import net.aquakeyn.testmod.entity.ModEntities;
 import net.aquakeyn.testmod.item.ModCreativeModeTabs;
 import net.aquakeyn.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -39,6 +40,8 @@ public class TestMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

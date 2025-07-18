@@ -20,5 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_SPACE_COOKIE.get());
 
         basicItem(ModItems.JUANA_SEEDS.get());
+
+        basicItem(ModItems.WAND.get());
     }
 }

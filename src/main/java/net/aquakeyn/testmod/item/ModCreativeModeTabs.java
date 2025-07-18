@@ -44,6 +44,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.JUANA_SEEDS);
                         output.accept(ModItems.RAW_SPACE_COOKIE);
                         output.accept(ModItems.SPACE_COOKIE);
+                        output.accept(ModItems.WAND);
                     }).build());
 
     public static void register(IEventBus eventBus) {

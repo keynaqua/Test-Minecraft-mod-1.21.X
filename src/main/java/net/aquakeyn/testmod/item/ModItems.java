@@ -2,6 +2,7 @@ package net.aquakeyn.testmod.item;
 
 import net.aquakeyn.testmod.TestMod;
 import net.aquakeyn.testmod.block.ModBlocks;
+import net.aquakeyn.testmod.item.custom.WandItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.bus.api.IEventBus;
@@ -29,6 +30,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> JUANA_SEEDS = ITEMS.register("juana_seeds",
             () -> new ItemNameBlockItem(ModBlocks.JUANA_CROP.get(), new Item.Properties()));
+
+    public static final DeferredItem<Item> WAND = ITEMS.register("wand",
+            () -> new WandItem(new Item.Properties().durability(32)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
